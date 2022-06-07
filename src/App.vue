@@ -1,6 +1,8 @@
 <template>
-  <NavigBar />
-  <router-view />
+  <div id="app">
+    <NavigBar />
+    <router-view />
+  </div>
 </template>
 
 <script>
@@ -15,6 +17,7 @@ export default {
 </script>
 
 <style lang="scss">
+$light-grey: #9da1b4;
 $dark-blue: #1f3347;
 $warning: #ffc814;
 
@@ -48,10 +51,12 @@ label {
 
 a {
   text-decoration: none;
+  color: $dark-blue;
 }
 
 button {
   background-color: $warning;
+  border: 0;
 
   & > * {
     color: #1f3347;

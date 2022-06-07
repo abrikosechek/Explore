@@ -1,12 +1,24 @@
 <template>
   <div class="main_page">
+    <MPIntro />
+    <TicketsPage />
+    <OutroPage />
     <img src="../assets/mp_bg.png" class="mp_bg" />
   </div>
 </template>
 
 <script>
+import MPIntro from "./MPIntro.vue";
+import TicketsPage from "./TicketsPage.vue";
+import OutroPage from "./OutroPage.vue";
+
 export default {
   name: "MainPage",
+  components: {
+    MPIntro,
+    TicketsPage,
+    OutroPage,
+  },
 };
 </script>
 
@@ -20,7 +32,7 @@ export default {
     left: 0;
     z-index: -10;
     width: 100%;
-    height: auto;
+    height: 750px;
   }
 }
 </style>
